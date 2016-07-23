@@ -2,6 +2,7 @@
 Game of life
 """
 import random
+
 from microbit import display, sleep
 
 present = [[random.randint(0, 1) for _ in range(5)] for _ in range(5)]
@@ -23,6 +24,7 @@ def count_living_neighbors(x, y, world):
         world[x-1][y_down], world[x][y_down], world[x_right][y_down],
     ])
 
+
 def evolve(present):
     future = [[0 for _ in range(5)] for _ in range(5)]
     for x in range(5):
@@ -38,12 +40,14 @@ def evolve(present):
                 future[x][y] = 0
     return future
 
+
 def show(present):
     for x in range(5):
         for y in range(5):
             if present[x][y] == 1:
                 display.set_pixel(x, y, 9)
-                
+
+
 def fade(how_much=1):
     for x in range(5):
         for y in range(5):
