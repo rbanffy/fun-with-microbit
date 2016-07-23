@@ -6,7 +6,6 @@ import random
 from microbit import display, sleep
 
 present = [[random.randint(0, 1) for _ in range(5)] for _ in range(5)]
-future = [[0 for _ in range(5)] for _ in range(5)]
 
 
 def count_living_neighbors(x, y, world):
