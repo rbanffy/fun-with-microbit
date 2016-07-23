@@ -1,9 +1,9 @@
 """
 LEDs start at random brightnesses and go up or down randomly by one level.
 """
-from microbit import display
 import random
 
+from microbit import display
 
 while True:
     for x in range(5):

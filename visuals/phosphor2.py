@@ -1,9 +1,10 @@
-from microbit import display, sleep, button_a, button_b
+from microbit import button_a, button_b, display, sleep
 
 # I need to keep my own brightess values
 brightness = [[0 for _ in range(5)] for _ in range(5)]
 
 delay = 20
+
 
 def fade(brightness):
     for x in range(5):
@@ -25,4 +26,4 @@ while True:
             brightness[x][y] = 9
             display.set_pixel(x, y, 9)
             for _ in range(delay):
-                sleep(1)    
+                sleep(1)

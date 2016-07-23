@@ -1,6 +1,7 @@
-from microbit import display, sleep, button_a, button_b
+from microbit import button_a, button_b, display, sleep
 
 delay = 20
+
 
 def fade():
     for x in range(5):

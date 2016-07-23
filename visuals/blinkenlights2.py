@@ -3,8 +3,9 @@ Because cool computers have lots of blinking lights (or used to be).
 
 Each LED is either on or off.
 """
-from microbit import display, sleep
 import random
+
+from microbit import display, sleep
 
 while True:
     for x in range(5):
