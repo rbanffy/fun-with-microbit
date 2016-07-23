@@ -4,9 +4,10 @@ change channel up/down. When shaken, picks one randomly.
 
 Used in conjunction with scanner.py.
 """
-from microbit import display, accelerometer, button_a, button_b
-import radio
 import random
+
+import radio
+from microbit import accelerometer, button_a, button_b, display
 
 
 def new_channel():

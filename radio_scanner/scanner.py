@@ -3,8 +3,8 @@ Scans channels from 0 to 99 for data traffic. Monitors actual number of
 messages received, not channel signals. Button A cycles through available data
 rates.
 """
-from microbit import button_a, display, sleep
 import radio
+from microbit import button_a, display, sleep
 
 
 def cycle(iterable):  # I know. MicroPython doesn't have itertools
